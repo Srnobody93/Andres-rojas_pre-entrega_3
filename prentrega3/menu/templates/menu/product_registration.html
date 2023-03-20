@@ -1,0 +1,28 @@
+{% extends 'menu\index.html ' %}
+
+{% block title %} Usuarios {% endblock  %}
+
+{% block contenido_inicial %}
+
+<h1> Registro de Usuarios </h1>
+
+<form action = ""  method = "POST"> 
+
+    {% csrf_token %}
+
+    <p>Nombre: <input type = "text" name="name">
+    <p>codigo producto: <input type = "number" name="product_code">
+    <p>precio: <input type = "number" name="price">
+
+
+    <input type = "submit" value="Enviar">
+
+
+</form>
+
+
+
+
+
+{% endblock  %}
+

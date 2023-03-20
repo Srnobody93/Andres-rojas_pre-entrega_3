@@ -1,0 +1,28 @@
+{% extends 'menu\index.html ' %}
+
+
+{% block title %} Usuarios {% endblock  %}
+
+{% block contenido_inicial %}
+
+<h1> Buscar pruductos </h1>
+
+<form action = ""  method = "POST"> 
+
+    {% csrf_token %}
+
+    <p>codigo: <input type="number" name="codigo"></p>
+
+
+    <input type = "submit" value="Enviar">
+
+    {{infor}}
+
+
+</form>
+
+
+
+
+
+{% endblock  %}
