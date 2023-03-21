@@ -1,5 +1,0 @@
-/__pycahce__/
-*.pyc
-Pipfile
-Pipfile.lock
-sqlite3
