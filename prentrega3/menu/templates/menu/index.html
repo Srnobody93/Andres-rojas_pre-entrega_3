@@ -39,6 +39,7 @@
       <link rel="stylesoeet" href="{% static 'menu/css/owl.theme.default.min.css'%}">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
    </head>
+
    <body>
       <!-- banner bg main start -->
       <div class="banner_bg_main">
@@ -178,24 +179,9 @@
       <div>
       {% block contenido_inicial %}
    
-            <table>
-               <th>Nombre</th>   
-               <th>Precio</th>
-               <th>Codigo</th>
-               
+      {% block title %} Pagina de inicio {% endblock  %}
 
-               {% for Compras in compra %}
-
-                  <tr>
-                     
-                     <td>{{ Compras.nombre }}</td>
-                     <td>{{ Compras.codigo }}</td>
-                     <td>{{ Compras.precio }}</td>
-                  <tr>
-
-
-               {% endfor %}
-            </table>
+      <h1> Bienvenido a la Pagina de inicio </h1>
          
       {% endblock  %} 
       </div>
